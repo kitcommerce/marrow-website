@@ -2,10 +2,7 @@
 
 import { useState, FormEvent } from "react";
 
-const FORMSPREE_ENDPOINT =
-  process.env.NEXT_PUBLIC_FORMSPREE_ID
-    ? `https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_ID}`
-    : "https://formspree.io/f/REPLACE_WITH_FORM_ID";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xgonwvpy";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
