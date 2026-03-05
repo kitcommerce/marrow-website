@@ -45,6 +45,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
+      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+      <head>
+        <script
+          defer
+          data-domain="getmarrow.co"
+          src="https://plausible.io/js/script.js"
+        />
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   );
